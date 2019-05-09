@@ -28,11 +28,11 @@ Polynomial long division
 Examples
 ^^^^^^^^
 
-.. image:: ../_static/poldiv2.png
+.. image:: ../static/poldiv2.png
 
 [#]_
 
-.. image:: ../_static/poldiv1.png
+.. image:: ../static/poldiv1.png
 
 [#]_
 
