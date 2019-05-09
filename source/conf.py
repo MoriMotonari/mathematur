@@ -21,6 +21,8 @@ project = 'Mathematur'
 copyright = '2019, Finn Harbeke'
 author = 'Finn Harbeke'
 
+master_doc = 'index'
+
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
 
