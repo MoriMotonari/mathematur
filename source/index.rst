@@ -5,3 +5,4 @@
    :caption: Contents:
 
    basics/index.rst
+   probability/index.rst

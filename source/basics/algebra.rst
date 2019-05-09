@@ -21,18 +21,18 @@ Polynomial long division
 
    * finished
 
-#. subtract :math:`g(x) * \displaystyle \frac{a}{b}x^{n-m}` from :math:`f(x)`
+#. subtract :math:`g(x) \cdot \displaystyle \frac{a}{b}x^{n-m}` from :math:`f(x)`
 
 #. repeat with result of 3.
 
 Examples
 ^^^^^^^^
 
-.. image:: ../static/poldiv2.png
+.. image:: ../static/basic/poldiv2.png
 
 [#]_
 
-.. image:: ../static/poldiv1.png
+.. image:: ../static/basic/poldiv1.png
 
 [#]_
 

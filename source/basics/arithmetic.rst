@@ -69,7 +69,7 @@ Properties
 
 :math:`(b^m)^n = b^{m*n}`
 
-:math:`(b * c)^n = b^n * c^n`
+:math:`(b \cdot c)^n = b^n \cdot c^n`
 
 Roots or Rational exponents [#]_
 --------------------------------
