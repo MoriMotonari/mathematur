@@ -49,10 +49,10 @@ Laplace-Experiment
 Ein Zufallsexperiment heisst Laplace-Experiment,
 wenn alle Elementarereignisse die gleiche Wahrscheinlichkeit besitzen.
 
-:math:`\displaystyle \omega \in \Omega: P(\{\omega\} = \frac{1}{|\Omega|}`
+:math:`\displaystyle \omega \in \Omega: P(\{\omega\}) = \frac{1}{|\Omega|}`
 
     :math:`|\Omega|` ist die Mächtigkeit von :math:`\Omega`,
-    also die Anzahl Elementare
+    also die Anzahl Elemente
 
 Beispiele
 ^^^^^^^^^
@@ -73,7 +73,7 @@ eines **mehrstufigen Zufallsexperiments** auffassen. Wir
 stellen ein mehrstufiges Zufallsexperiment mithilfe
 eines **Baumdiagramms** dar.
 
-**Beispiel:** In einer Urne liegen 7 rote und 3 blaue
+**Beispiel:** In einer Urne liegen 7 blaue und 3 rote
 Kugeln. Es werden nacheinander 2 Kugeln mit Zurücklegen
 gezogen.
 
@@ -96,7 +96,7 @@ Pfades werden **multipliziert**.
 **2. Pfadregel:** Wahrscheinlichkeiten verschiedener
 Pfade werden **addiert**.
 
-**1. Baumregel:** Die Sume der Wahrscheinlichkeiten
+**1. Baumregel:** Die Summe der Wahrscheinlichkeiten
 auf den Ästen, die von einem gemeinsamen Anfangspunkt
 ausgehen, ist stets 1.
 
@@ -153,9 +153,9 @@ Bernoulliexperiment
 Ein Zufallsexperiment mit nur zwei
 möglichen Ergebnissen: Treffer :math:`T` und Niete :math:`N`
 
-Erfolgswahrscheinlichkeit :math:`p = P(T)`
+**Erfolgswahrscheinlichkeit** :math:`p = P(T)`
 
-Misserfolgswahrscheinlichkeit :math:`P(N) = 1-p`
+**Misserfolgswahrscheinlichkeit** :math:`P(N) = (1-p)`
 
 Jedes Zufallsexperiment kann zu einem Bernoulliexperiment
 umgeformt werden. Ist :math:`\Omega` die Ergebnismenge, so
@@ -179,7 +179,7 @@ Sequenzen der Länge :math:`n` aus den Buchstaben
 :math:`C =` **genau** :math:`k` **Treffer:** :math:`P(C)=\binom{n}{k}\cdot p^k\cdot (1-p)^{n-k}`
 
 .. [#] Sources:
-       https://de.wikipedia.org/wiki/Wahrscheinlichkeitstheorie
-       `Dr. Robert Aehle <http://www.lgr.ch/personen/lehrpersonen/?f=0&s=Aehle>`
+       https://de.wikipedia.org/wiki/Wahrscheinlichkeitstheorie,
+       `Dr. Robert Aehle <http://www.lgr.ch/personen/lehrpersonen/?f=0&s=Aehle>`__
 
 .. [#] https://www.youtube.com/watch?v=mkDzmI7YOx0

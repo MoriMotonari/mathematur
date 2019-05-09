@@ -7,5 +7,4 @@ Basics
    algebra.rst
    arithmetic.rst
    functions.rst
-   geometry.rst
    graphs.rst
