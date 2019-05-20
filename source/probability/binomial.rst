@@ -2,7 +2,7 @@ Binomialverteilung [#]_
 =======================
 
 Die Binomialverteilung ist die Verteilung
-eines Bernoulliexperiments mit :math:`n`
+eines Bernoulliexperiments (siehe :ref:`bernoulli`) mit :math:`n`
 Versuchen und der Erfolgswahrscheinlichkeit :math:`p` .
 
 Der Erwartungswert:
@@ -40,3 +40,5 @@ Die Wahrscheinlichkeit:
 
 
 .. [#] Source: `Dr. Robert Aehle <http://www.lgr.ch/personen/lehrpersonen/?f=0&s=Aehle>`__
+
+.. [#] https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-plus

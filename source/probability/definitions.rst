@@ -144,6 +144,8 @@ Gegeben ist ein Zufallsexperiment mit dem Ergebnisraum
 Funktion, die jedem Ergebnis :math:`\omega \in \Omega`
 eine reelle Zahl :math:`X(\omega)` zuordnet.
 
+.. _bernoulli:
+
 Bernoulliketten
 ---------------
 
@@ -177,6 +179,85 @@ Sequenzen der Länge :math:`n` aus den Buchstaben
 :math:`B =` **Mindestens ein Treffer:** :math:`P(B) = 1-(1-p)^n`
 
 :math:`C =` **genau** :math:`k` **Treffer:** :math:`P(C)=\binom{n}{k}\cdot p^k\cdot (1-p)^{n-k}`
+
+Wartezeit-Aufgaben
+^^^^^^^^^^^^^^^^^^
+
+Erster Treffer:
+    Die Zufallsgrösse :math:`X` beschreibt, im wievielten
+    Versuch erstmals ein Treffer eintritt.
+
+    * Wahrscheinlichkeit für den ersten Treffer im
+      :math:`n`-ten Versuch. Bzw. Wahrscheinlichkeit,
+      dass die ersten :math:`n-1` Versuche Nieten
+      und der :math:`n`-ten Versuch ein Treffer ergeben:
+
+      .. math::
+        P(X=n) = (1-p)^{n-1} \cdot p
+
+    * Wahrscheinlichkeit für den ersten Treffer **frühestens**
+      im :math:`n`-ten Versuch. Bzw. Wahrscheinlichkeit für
+      keinen Treffer in den ersten :math:`n-1` Versuchen:
+
+      .. math::
+        P(X=n) = (1-p)^{n-1}
+
+    * Wahrscheinlichkeit für den ersten Treffer **spätestens**
+      im :math:`n`-ten Versuch. Bzw. Wahrscheinlichkeit, dass
+      nicht alle :math:`n` Versuche Nieten sind.
+
+      .. math::
+        P(X=n) = 1 - (1-p)^n
+
+    **Beispiel:** Würfelwurf, Treffer ist Ereignis :math:`T = {1, 2}`.
+    Die Zufallsgrösse :math:`X` beschreibt, im wievielten
+    Versuch :math:`T` erstmals eintritt. :math:`P(T) = p = \frac{1}{3}.`
+
+        * :math:`P(X=5) = (1-\frac{1}{3})^{4} \cdot \frac{1}{3} = \frac{16}{243}`
+
+        * :math:`P(X\geq 5) = (1-\frac{1}{3})^{4} = \frac{16}{81}`
+
+        * :math:`P(X\leq 5) = 1 - (1-\frac{1}{3})^{5} = 1 - \frac{32}{243} = \frac{211}{243}`
+
+Suche nach Länge :math:`n` der Bernoullikette:
+    Die Zufallsgrösse :math:`Y` beschreibt die Anzahl Treffer mit
+    Erfolgswahrscheinlichkeit :math:`p` bei einer Bernoullikette der
+    Länge :math:`n`.
+
+    * Was ist die kleinste Anzahl Versuche (kleinstes :math:`n`),
+      dass zu einer Wahrscheinlichkeit von mindestens :math:`A`
+      mindestens ein Treffer eintritt? Bzw. dass zu einer
+      Wahrscheinlichkeit von höchstens :math:`1-A` kein
+      Treffer eintritt?
+
+      .. math::
+        \begin{align}
+        P(Y\geq 1)& \geq A\\
+        \Leftrightarrow 1 - P(Y=0)& \geq A\\
+        \Leftrightarrow 1-A& \geq P(Y=0)\\
+        \Leftrightarrow 1-A& \geq (1-p)^n\\
+        \Leftrightarrow \log(1-A)& \geq n \cdot \log(1-p)\\
+        \Leftrightarrow \displaystyle \frac{\log(1-A)}{\log(1-p)}& \leq n\\ 
+        \end{align}
+
+      .. warning::
+        Siehe :ref:`log` für die Logarithmusgesetze.
+
+        Im letzten Schritt wird durch :math:`\log(1-p)` geteilt,
+        beachte, dass der Logarithmus einer Zahl zwischen 0 und 1
+        negativ ist und deshalb Ungleichheitszeichen gekehrt werden muss.
+    
+    **Beispiel:** Würfelwurf, Treffer ist Ereignis :math:`T = {1, 2}`.
+    :math:`expression`: Anzahl Treffer. Wie oft muss gewürfelt werden,
+    dass zu einer Wahrscheinlichkeit von :math:`97%` mindestens eine 1
+    oder eine 2 gewürfelt wird?
+
+        * :math:`P(Y\geq 1) \geq 0.97 \Leftrightarrow \displaystyle n \geq \frac{\log(0.03)}{\log(\frac{2}{3})} \approx 8.65`
+
+          Es muss mindestens 9 mal gewürfelt werden, damit zu einer
+          :math:`97%`-iger Wahrscheinlichkeit mindestens eine 1
+          oder eine 2 gewürfelt wird.
+
 
 .. [#] Sources:
        https://de.wikipedia.org/wiki/Wahrscheinlichkeitstheorie,

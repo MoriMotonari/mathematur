@@ -6,3 +6,4 @@
 
    basics/index.rst
    probability/index.rst
+   geometry/index.rst

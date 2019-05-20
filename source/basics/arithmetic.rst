@@ -80,6 +80,8 @@ Roots or Rational exponents [#]_
 
 :math:`\displaystyle \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}`
 
+.. _log:
+
 Logarithms [#]_
 ---------------
 

@@ -97,4 +97,10 @@ kann er kreieren?
 
 :math:`\displaystyle \binom{5+3-1}{3} = 840`
 
+.. warning::
+    Auch aus {blau-blau-blau} entsteht eine Farbe (mit Wiederholung)!
+
+    {rot-gelb-rot} mischt das gleiche dunkelorange wie {gelb-rot-rot},
+    ist also dieselbe Kombination!
+
 .. [#] Source: `Dr. Robert Aehle <http://www.lgr.ch/personen/lehrpersonen/?f=0&s=Aehle>`__
