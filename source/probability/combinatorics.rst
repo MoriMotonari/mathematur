@@ -1,5 +1,5 @@
-Kombinatorik
-============
+Kombinatorik [#]_
+=================
 
 Permutation
 -----------
@@ -95,4 +95,6 @@ nur einen Teelöffel hat und eine Mischung aus jeweils
 3 Löffeln Farbe bestehen muss. Wieviele Mischungen
 kann er kreieren?
 
-:math:`\displaystyle \binom{5+3-1}{3} = \frac{840}`
+:math:`\displaystyle \binom{5+3-1}{3} = 840`
+
+.. [#] Source: `Dr. Robert Aehle <http://www.lgr.ch/personen/lehrpersonen/?f=0&s=Aehle>`__

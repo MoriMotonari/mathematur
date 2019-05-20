@@ -6,3 +6,5 @@ Probability
 
    combinatorics.rst
    definitions.rst
+   verteilung.rst
+   binomial.rst
